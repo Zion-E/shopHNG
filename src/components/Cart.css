@@ -1,0 +1,53 @@
+.cart_page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .cart_totals, .proceed_to_checkout {
+    display: grid;
+    justify-content: right;
+    
+  }
+
+  thead, .cart_totals, button.coupon_code {
+    background-color: #3A3845;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .cart_page {
+      padding: 10px;
+    }
+
+    .cart_page table {
+      font-size: 14px;
+    }
+
+    .cart_page th,
+    .cart_page td {
+      padding: 5px;
+    }
+
+    .cart_page .cart_totals {
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    .cart_page .proceed_to_checkout {
+      padding: 5px 10px;
+    }
+
+    .cart_page .coupon_code {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cart_page .coupon_code input[type='text'] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  

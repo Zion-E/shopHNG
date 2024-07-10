@@ -1,0 +1,126 @@
+.checkout_page {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .column_1 {
+    width: 60%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .column_2 {
+    width: 40%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .form_row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .first_line {
+    display: flex;
+    justify-content: space-between;
+    border-right: 5px;
+  }
+  .form_group {
+    margin-bottom: 10px;
+  }
+  
+  .form_group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form_group input,
+  .form_group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .product_information {
+    margin-top: 20px;
+  }
+  
+  .product_information h2 {
+    margin-bottom: 10px;
+  }
+  
+  .product_information ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product_information li {
+    margin-bottom: 10px;
+  }
+  
+  .payment_information {
+    margin-top: 20px;
+  }
+  
+  .credit_card,
+  .paypal {
+    margin-bottom: 20px;
+  }
+  
+  .credit_card input,
+  .paypal input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .place_order,
+  .return_to_shipping {
+    background-color: #3A3845;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 768px) {
+    .checkout_page {
+      flex-direction: column;
+    }
+    .column_1,
+    .column_2 {
+      width: 100%;
+    }
+    .form_row {
+      flex-direction: column;
+    }
+    .form_group {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .checkout_page {
+      padding: 20px;
+    }
+    .column_1,
+    .column_2 {
+      padding: 10px;
+    }
+    .form_group {
+      margin-bottom: 5px;
+    }
+  }
+  
